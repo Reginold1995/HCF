@@ -1,0 +1,64 @@
+Example: Find the GCF of 12 and 8.
+
+Factors of 12: 1, 2, 3, 4, 6, 12
+
+Factors of 8: 1, 2, 4, 8
+
+Common Factors: 1, 2, 4
+
+Greatest Common Factor: 4
+
+Using Java for loop
+
+In the following program, we have initialized two numbers a=12 and b=8. After that, we have used a for loop that runs from 1 to the smallest of both numbers. It executes until the condition i <= a && i <= b returns true. Inside the for loop, we have also used if statement that tests the condition (a%i==0 && b%i==0) and returns true if both conditions are satisfied. At last, we have store the value of i in the variable gcd and print the same gcd variable.
+
+EXAMPLE:
+
+class Gcd
+{
+    public static void main (String args[])
+    {
+       int a = 12;
+       int b = 8;
+       int c=( a>b)?a:b;
+       int GCD= 0;
+       for( int i=2;i<=b;i++)
+        {
+           if(a%i==0 && b%i==0)
+            {
+               GCD=i;
+                
+             }
+       }
+
+          System.out.println(GCD);
+   }
+} 
+
+OUTPUT:
+
+4
+
+For finding three numbers:
+
+    class Hcf
+{
+  public static void main(String args[])
+    { 
+        int hcf=0;
+        int a=12;
+        int b=20;
+        int c=24;
+
+        for(int i=1;i<=a || i<=b || i<=c;i++)
+           {
+                 
+                if(a%i==0 && b%i==0 && c%i==0)
+                hcf=i;
+            }
+              System.out.println(hcf);
+      }
+    }
+}
+OUTPUT:
+4
